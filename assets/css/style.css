@@ -1,0 +1,163 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    /* Emmet */
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng ( kiểu chữ, hình tròn, vuông...)
+ */
+#wrapper {
+}
+
+#header{
+    height: 46px;
+    background: #355C7D	;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    z-index: 1; 
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style: none;
+}
+#nav >li {
+    display: inline-block;  
+    position: relative;
+}
+#nav>li>a{
+    text-transform: uppercase;
+    display: inline-block;
+}
+#nav li a{
+    text-decoration: none;
+    color: #F67280;
+    padding : 0 24px;
+    line-height: 46px;
+}
+#nav >li:hover> a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav {
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.3);
+    display: none;
+    top: 100%;
+    left: 0px;
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 46px;
+}
+#nav .subnav li:hover{
+    color:#000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider/hinhnenkdaalloutseraphineindie5f83e12ce930d_5947e0dcce769c926fd71f97faef85cf.jpg') top center / cover no-repeat ;
+    position: relative;
+}
+#slider .text-content{
+    bottom: 47px;
+    position: absolute;
+    color:#fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.text-content .text-heading{
+    position: relative;
+    font-weight: 500;
+    font-size: 24px;
+    background: pink;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+.text-content .text-description{
+    font-size: 15px;
+    font-style: italic;
+}
+
+#content {
+}
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0px;
+}
+#content .section-heading{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .content-section .about{
+    text-align: justify;
+    margin: 15px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+#content .member-list{  
+    position: relative;
+    text-align: center;
+
+}
+#content .member-img{
+    width: 600px;
+    border-radius: 10px;
+}
+#footer {
+    
+}
